@@ -12,6 +12,7 @@ package restaurantrush.model;
 public class HappyHour {
     public static final int DURATION_TURNS = 2;
     public static final int DISCOUNT_PERCENT = 20;
+    public static final int SATISFACTION_RECOVERY = 15;
 
     private boolean used;
     private int turnsRemaining;
