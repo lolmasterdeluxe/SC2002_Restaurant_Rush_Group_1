@@ -9,7 +9,7 @@ public class WaitingQueue {
     private final List<Customer> waiting = new ArrayList<>();
 
     public void join(Customer customer) {
-        if (!waiting.contains(customer)) {
+        if (customer != null && !waiting.contains(customer)) {
             waiting.add(customer);
         }
     }
@@ -49,6 +49,6 @@ public class WaitingQueue {
     }
 
     public List<Customer> asList() {
-        return waiting;
+        return new ArrayList<>(waiting);
     }
 }
