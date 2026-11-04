@@ -16,19 +16,22 @@ public class ConsoleUI {
     }
 
     public void displayTurnHeader(int turn, Restaurant restaurant) {
-        System.out.println("\n==================================================");
-        System.out.println("                 TURN " + turn + " / 18");
+        System.out.println("\n=================================================================================================");
+        System.out.println("                                        TURN " + turn + " / 18");
         if (restaurant.getHappyHour().isActive()) {
             System.out.println("   *** HAPPY HOUR ACTIVE (" + restaurant.getHappyHour().getTurnsRemaining() + " turns left) ***");
         }
-        System.out.println("==================================================");
+        System.out.println("=================================================================================================");
 
         String rev = MoneyUtils.formatCents(restaurant.getTotalRevenueCents());
         String avgSat = restaurant.getRoster().averagePaidSatisfactionText();
         int paidCount = restaurant.getRoster().paidCount();
+        int unhappyDeparts = restaurant.getRoster().unhappyDepartures();
+        int servedCount = restaurant.getRoster().servedCount();
 
-        System.out.println("Revenue: " + rev + " | Paid Customers: " + paidCount + " | Avg Paid Sat: " + avgSat);
-        System.out.println("--------------------------------------------------");
+        System.out.println("Revenue: " + rev + " | Paid Customers: " + paidCount + " | Avg Paid Sat: " + 
+                            avgSat + " | Unhappy Departs: " + unhappyDeparts + " | Served Customers: " + servedCount);
+        System.out.println("-------------------------------------------------------------------------------------------------");
 
         System.out.print("Waiting Queue: ");
         List<Customer> waiting = restaurant.getWaitingQueue().asList();
@@ -51,9 +54,15 @@ public class ConsoleUI {
                 System.out.println("  Table " + t.getTableNumber() + ": " + c.label()
                         + " | Status: " + c.getStatus().getDescription()
                         + " | Sat: " + c.getSatisfaction());
+                
+                try{ 
+                    System.out.println("  " + c.getOrder().toString());
+                } catch (Exception e) {}
             }
+
+            System.out.println();
         }
-        System.out.println("--------------------------------------------------");
+        System.out.println("-------------------------------------------------------------------------------------------------");
     }
 
     public void displayMessage(String msg) {
