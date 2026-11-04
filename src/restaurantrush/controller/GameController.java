@@ -120,11 +120,18 @@ public class GameController {
             int chefChoice = console.getIntInput("Chef: choose action (1:cook, 2:wait): ", 1, 2);
 
             if (chefChoice == 1) {
+                
                 int tableNum = console.getIntInput("Chef: choose table to cook order (1, 2, ...): ", 1, GameConfig.getNumTables());
-                Customer customer = restaurant.getTable(tableNum).getCurrentCustomer();
+                try{
+                    Customer customer = restaurant.getTable(tableNum).getCurrentCustomer();
 
-                System.out.println(chef.prepare(customer.getOrder()).toString());
-                console.displayTurnHeader(turn, restaurant);
+                
+                    System.out.println(chef.prepare(customer.getOrder()).toString());
+                    console.displayTurnHeader(turn, restaurant);
+                }
+                catch (Exception e) {
+                    System.out.println("FAILED: Cannot cook order #" + tableNum + " : it is EMPTY.");
+                }
             }
             else if (chefChoice == 2) {
                 break;
