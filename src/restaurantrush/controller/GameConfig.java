@@ -6,7 +6,7 @@ public class GameConfig {
     private static Menu menu = Menu.menuWithCombos();
     private static int numTables = 2;
     private static int turns = 18;
-    private static int paidCustomersGoal = 4; // $450.00 in cents
+    private static int paidCustomersGoal = 4;
     private static int revenueGoal = 4500; // $45.00 in cents
     private static double avgSatisfactionGoal = 60.0;
 
