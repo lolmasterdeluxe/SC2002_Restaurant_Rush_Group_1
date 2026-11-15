@@ -233,17 +233,17 @@ The class diagrams leave out constructors, `toString()` and plain getters that o
 ## Video
 **Video link:** https://drive.google.com/file/d/13Fro5qnebHcVttcJepA7IlXZJ8Js-s3C/view?usp=drive_link 
 
-**Length:** 14min 9s
+**Length:** 14min 7s
 
-| # | Required segment | Timestamp |
+| # | Required segment | Timestamp | Presented by |
 |:---:|:---|:---:|:---|
-| 1 | The game launching from the submitted project | 1:18
-| 2 | Meaningful manager choices, including a decision where staff are constrained | 4:50
-| 3 | A dish going READY → SERVED → payment | 2:02
-| 4 | A VIP or Critic behaviour | 2:55
-| 5 | A Stage 3 feature | 7:25
-| 6 | One victory and one defeat | 4:40 
-| 7 | The stage tag comparisons and the diagrams | 5:20
+| 1 | The game launching from the submitted project | 1:20 | Rifdi |
+| 2 | Meaningful manager choices, including a decision where staff are constrained | 4:18 | Rifdi |
+| 3 | A dish going READY → SERVED → payment | 1:56 | Rifdi |
+| 4 | A VIP or Critic behaviour | 2:47 | Rifdi |
+| 5 | A Stage 3 feature (Happy Hour, Host, combo meal) | 3:39 | Rifdi |
+| 6 | One victory and one defeat | 4:36 (victory), 4:50 (defeat) | Rifdi |
+| 7 | The stage tag comparisons and the diagrams | 5:04 (Stage 1 → 2), 7:16 (Stage 2 → 3), 7:48 (Stage 3 class diagram), 9:46 (sequence diagram) | (Stage 1 → 2), (Stage 2 → 3), (sequence) |
  
 
 
