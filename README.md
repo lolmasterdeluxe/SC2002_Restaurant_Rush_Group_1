@@ -69,8 +69,6 @@ To build an earlier stage, check out its tag first (`git checkout stage-1`, `sta
 | 2 Customer behaviour | [`stage-2`](https://github.com/lolmasterdeluxe/SC2002_Restaurant_Rush_Group_1/tree/stage-2) | VIP and Critic customers | `VIPCustomer`, `CriticCustomer` | `Customer`, `CustomerFactory`, `Menu`, `MoneyUtils` | None |
 | 3 New role and menu policy | [`stage-3`](https://github.com/lolmasterdeluxe/SC2002_Restaurant_Rush_Group_1/tree/stage-3) | Host, ComboMeal, Happy Hour | `Host`, `SeatingStaff`, `ComboMeal`, `HappyHour`, `PricingService` | `Waiter`, `Customer`, `CustomerRoster`, `Restaurant`, `Menu`, `GameConfig`, `GameController`, `ConsoleUI`, `Main` | None |
 
-> **Development note (TODO: group to confirm the wording).** We first built the game as one codebase that already contained the Stage 3 features. The three stage versions were then separated into the commits tagged above, so that each stage compiles and runs by itself and contains only its own features. Our report's reflection section describes this.
-
 ### Stage 1 baseline
 
 | Package | Classes | Responsibility |
