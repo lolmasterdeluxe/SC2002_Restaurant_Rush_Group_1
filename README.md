@@ -232,27 +232,10 @@ The class diagrams leave out constructors, `toString()` and plain getters that o
 
 ## Video
 
-TODO: add the video link (it must stay available to graders).
+ 
 
-| # | Segment | Timestamp | Presented by |
-|:---:|:---|:---:|:---|
-| 1 | The game launching from the submitted project | TODO | TODO |
-| 2 | Meaningful manager choices, including a decision where staff are constrained | TODO | TODO |
-| 3 | A dish going READY → SERVED → payment | TODO | TODO |
-| 4 | A VIP or Critic behaviour | TODO | TODO |
-| 5 | A Stage 3 feature | TODO | TODO |
-| 6 | One victory and one defeat | TODO | TODO |
-| 7 | The stage tag comparisons and the diagrams | TODO | TODO |
+|
 
-## Team and task division
-
-| Member | Area | Main files |
-|:---|:---|:---|
-| TODO: name | Game engine and control (`controller`) | `Main`, `GameController`, `GameConfig`, `GameResult` |
-| TODO: name | Presentation and core containers (`ui`, `model`) | `ConsoleUI`, `MoneyUtils`, `Restaurant`, `Table`, `WaitingQueue` |
-| TODO: name | Staff (`model.staff`) | `Staff`, `SeatingStaff`, `Waiter`, `Chef`, `Cashier`, `Host`, `ActionResult` |
-| TODO: name | Customers (`model.customer`) | `Customer`, `RegularCustomer`, `VIPCustomer`, `CriticCustomer`, `CustomerFactory`, `CustomerRoster`, `CustomerStatus` |
-| TODO: name | Menu, orders and pricing (`model.menu`, `model`) | `MenuItem`, `Dish`, `ComboMeal`, `Menu`, `Order`, `OrderStatus`, `HappyHour`, `PricingService` |
 
 ## Game mechanics, dynamics and aesthetics (MDA)
 
@@ -266,6 +249,4 @@ TODO: add the video link (it must stay available to graders).
 
 **Aesthetics.** Limited staff actions against falling satisfaction make each turn a small puzzle; chaining Host, Waiter and Chef on the same customer in one turn is the reward for planning ahead.
 
-## Use of generative AI
 
-TODO: the group states here, consistently with each member's Declaration on Use of GAI Assistance, which tools were used and for what.
