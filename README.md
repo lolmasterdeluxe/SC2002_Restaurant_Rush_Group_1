@@ -231,10 +231,22 @@ The class diagrams leave out constructors, `toString()` and plain getters that o
 ![Sequence diagram](docs/sequence.svg)
 
 ## Video
+**Video link:** https://drive.google.com/file/d/13Fro5qnebHcVttcJepA7IlXZJ8Js-s3C/view?usp=drive_link 
 
+**Length:** 14min 9s
+
+| # | Required segment | Timestamp |
+|:---:|:---|:---:|:---|
+| 1 | The game launching from the submitted project | 1:18
+| 2 | Meaningful manager choices, including a decision where staff are constrained | 4:50
+| 3 | A dish going READY → SERVED → payment | 2:02
+| 4 | A VIP or Critic behaviour | 2:55
+| 5 | A Stage 3 feature | 7:25
+| 6 | One victory and one defeat | 4:40 
+| 7 | The stage tag comparisons and the diagrams | 5:20
  
 
-|
+
 
 
 ## Game mechanics, dynamics and aesthetics (MDA)
